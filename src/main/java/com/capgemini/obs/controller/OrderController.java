@@ -91,7 +91,7 @@ public class OrderController {
 	}
 	
 	@DeleteMapping("/removeBook/{bookId}")
-	public String removeTest(@PathVariable Integer bookId) throws OrderException {
+	public String removeBook(@PathVariable Integer bookId) throws OrderException {
 		try {
 			return orderServiceImpl.removeBook(bookId);
 		} catch (Exception exception) {
